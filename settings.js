@@ -15,38 +15,38 @@ if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 
 
 //=================================================//
-global.SESSION_ID = process.env.SESSION_ID || '' 
+global.SESSION_ID = process.env.SESSION_ID || 'XPLOADER-BOT:~arh3HJZQ#Vl4gFREqwzyIbALybUteHx3rHqyzwI-AxVafWik2L1Q' 
 //Enter your Xploader session id here; must start with XPLOADER-BOT:~
 
 //=================================================//
-global.botname = process.env.BOT_NAME || '᙭ᑭᒪOᗩᗪᗴᖇ ᗷOT' 
+global.botname = process.env.BOT_NAME || 'ＺＯＹＡ ＭＤ' 
 //Your desired bot name
 
 //=================================================//
-global.ownernumber = process.env.OWNER_NUMBER || '254754783972' 
+global.ownernumber = process.env.OWNER_NUMBER || '94702932200
 //Type your main number here
 
 //=================================================//
-global.sudo = process.env.SUDO ? process.env.SUDO.split(',') : ['254796180105', '254712345678'];
+global.sudo = process.env.SUDO ? process.env.SUDO.split(',') : ['', ''];
 // Type additional allowed users here
 //NB: They'll be able to use every functions of the bot without restrictions.
 
 //=================================================//
-global.ownername = process.env.OWNER_NAME || 'Tylor' 
+global.ownername = process.env.OWNER_NAME || 'ᴍʀ ᴋᴀʟᴀɴᴀ ᴏꜰᴄ' 
 //Type your name here
 
 //=================================================//
 global.plink = process.env.PLINK || "https://www.instagram.com/heyits_tylor?igsh=YzljYTk1ODg3Zg=="
 
 //=================================================//
-global.wm = process.env.GL_WM || "©᙭ᑭᒪOᗩᗪᗴᖇ ᗷOT"
+global.wm = process.env.GL_WM || "ＺＯＹＡ ＭＤ"
 
 //=================================================//
-global.packname = process.env.STICKER_PACK_NAME || "᙭ᑭᒪOᗩᗪᗴᖇ" 
+global.packname = process.env.STICKER_PACK_NAME || "ＺＯＹＡ ＭＤ" 
 //The sticker pack name
 
 //=================================================//
-global.author = process.env.STICKER_AUTHOR_NAME || "ᗷOT" 
+global.author = process.env.STICKER_AUTHOR_NAME || "ᴍʀ ᴋᴀʟᴀɴᴀ ᴏꜰᴄ" 
 //The sticker author name
 
 //=================================================//
@@ -66,11 +66,11 @@ global.autoviewstatus = process.env.AUTO_STATUS_VIEW || 'true'
 // set true to enable and false to disable auto status view
 
 //=================================================//
-global.autoreactstatus = process.env.AUTO_STATUS_REACT || 'false'
+global.autoreactstatus = process.env.AUTO_STATUS_REACT || 'true'
 // set true to enable and false to disable auto status react
 
 //=================================================//
-global.alwaysonline = process.env.ALWAYS_ONLINE || 'true'
+global.alwaysonline = process.env.ALWAYS_ONLINE || 'false'
 //Set true to make the bot online 24/7 or set false to disable always online
 
 
@@ -79,7 +79,7 @@ global.chatbot = process.env.CHATBOT || 'false'
 // set true to enable and false to disable auto ai chatbot
 
 //=================================================//
-global.anticall = process.env.ANTI_CALL || 'false'
+global.anticall = process.env.ANTI_CALL || 'true
 // set true to enable and false to disable auto blocking of callers
 
 //=================================================//
@@ -87,11 +87,11 @@ global.welcome = process.env.WELCOME_MSG || 'false'
 // set true to enable and false to disable welcoming and left messages to groups upon joining or leaving groups
 
 //=================================================//
-global.timezones = process.env.TIMEZONE || "Africa/Nairobi" 
+global.timezones = process.env.TIMEZONE || "Asia/Colombo"
 //Don't edit this if you don't know!
 
 //=================================================//
-global.autoread = process.env.AUTO_READ || 'false';
+global.autoread = process.env.AUTO_READ || 'true
 // Set to 'true' to enable automatic reading of messages
 
 //=================================================//
@@ -106,9 +106,11 @@ global.menustyle = process.env.MENU_STYLE || '2'
 //=================================================//
 //Replies
 global.mess = { 
+  limit: '*Your limit is used up!*', 
   done: '*Done*', 
-  success: '©᙭ᑭᒪOᗩᗪᗴᖇ ᗷOT', 
-  owner: `*You don't have permission to use this command!*`, 
+  error: '*Sorry, I cannot perform that action!*', 
+  success: '*ＺＯＹＡ ＭＤ*', 
+  owner: '*Apologies, only my owner can use this command!*', 
   group: '*This feature becomes available when you use it in a group!*', 
   admin: '*You’ll unlock this feature with me as an admin!*', 
   notadmin: '*This feature will work once you become an admin. A way of ensuring order!*' 
